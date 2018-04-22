@@ -1,0 +1,104 @@
+@font-face {
+  font-family: "NexaBold";
+  src: url("../fonts/NexaBold.ttf.eot?") format("eot"), url("../fonts/NexaBold.ttf.woff2") format("woff2"), url("../fonts/NexaBold.ttf.woff") format("woff"), url("../fonts/NexaBold.ttf.ttf") format("truetype"), url("../fonts/NexaBold.ttf.svg#NexaBold") format("svg");
+}
+
+.navbar-red .navbar-toggler i, .navbar-red .navbar-nav .active > .nav-link, .navbar-red .navbar-nav .nav-link.active, .navbar-red .navbar-nav .nav-link.show, .navbar-red .navbar-nav .show > .nav-link, .navbar-red .navbar-nav .nav-link {
+  color: #911c1c;
+}
+
+.scrolled {
+  background-color: #ffffff !important;
+  transition: 0.3s;
+}
+
+.page {
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  /*overflow: hidden;*/
+}
+
+.navbar-red .navbar-toggler {
+  color: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.navbar-red .nav-item {
+  font-size: 20px;
+  font-family: "NexaBold";
+  color: #911c1c;
+  line-height: 1.504;
+  margin-right: 15px;
+}
+
+.home-section {
+  background-image: url(../images/head.jpg);
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-color: #ffffff;
+  min-height: 600px;
+  width: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+  .home-section {
+    background-attachment: scroll;
+  }
+}
+
+.home-section .home-destaque {
+  margin: 0;
+  margin-top: 15%;
+}
+
+.home-section .home-destaque .destaque {
+  background-image: url(../images/backdate.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 720px;
+}
+
+@media screen and (max-width: 1000px) {
+  .home-section .home-destaque .destaque {
+    background-position: right;
+  }
+}
+
+.home-section .home-cta {
+  padding-top: 45%;
+  padding-left: 10%;
+  text-align: left;
+}
+
+@media screen and (max-width: 1000px) {
+  .home-section .home-cta {
+    padding-top: 70%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .home-section .home-cta {
+    padding-top: 100%;
+  }
+}
+
+.home-section .home-cta p {
+  font-size: 21px;
+}
+
+.home-section .home-cta button {
+  background: linear-gradient(-90deg, #911c1c, red);
+  border: 0px;
+  color: #ffffff;
+  border-radius: 15px;
+}
+/*# sourceMappingURL=style.css.map */

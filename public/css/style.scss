@@ -1,0 +1,117 @@
+@import "_mixing.scss";
+@include font-face(NexaBold, "../fonts/NexaBold.ttf");
+$color-menu: #911c1c;
+%shared-menu-color {
+  color: #911c1c;
+}
+
+.scrolled {
+  background-color: #ffffff !important;
+  transition: 0.3s;
+}
+
+.page {
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  /*overflow: hidden;*/
+}
+
+.navbar-red {
+  .navbar-toggler {
+    color: rgba(0, 0, 0, .5);
+    border-color: rgba(0, 0, 0, .1);
+    i {
+      @extend %shared-menu-color;
+    }
+  }
+  .navbar-nav {
+    .active>.nav-link {
+      @extend %shared-menu-color;
+    }
+    .nav-link.active {
+      @extend %shared-menu-color;
+    }
+    .nav-link.show {
+      @extend %shared-menu-color;
+    }
+    .show>.nav-link {
+      @extend %shared-menu-color;
+    }
+    .nav-link {
+      @extend %shared-menu-color;
+    }
+  }
+  .nav-item {
+    font-size: 20px;
+    font-family: "NexaBold";
+    color: $color-menu;
+    line-height: 1.504;
+    margin-right: 15px;
+  }
+}
+
+.home-section {
+  background-image: url(../images/head.jpg);
+  // background-position: 50% -55px;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  background-color: #ffffff;
+  min-height: 600px;
+  width: 100%;
+  display: block;
+  position: relative;
+  overflow: hidden;
+
+  @media screen and (max-width: 1024px) {
+    background-attachment: scroll;
+  }
+
+  .home-destaque{
+    margin: 0;
+    margin-top:15%;
+
+    .destaque {
+      background-image: url(../images/backdate.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      
+      height: 720px;
+      
+      @media screen and (max-width: 1000px) {
+        background-position: right;
+        
+      }
+    }
+  }
+
+  .home-cta{
+    padding-top:45%;
+    padding-left: 10%;
+    text-align:left;
+
+    @media screen and (max-width: 1000px) {
+      padding-top:70%;      
+    }
+    @media screen and (max-width: 700px) {
+      padding-top:100%;      
+    }
+    p{
+      font-size: 21px
+    }
+    button{
+      background: linear-gradient(-90deg, #911c1c, red);
+      border: 0px;
+      color: #ffffff;
+      border-radius: 15px;
+    }
+  }
+  
+}
+
+
