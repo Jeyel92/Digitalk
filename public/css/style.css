@@ -1,10 +1,23 @@
 @font-face {
   font-family: "NexaBold";
-  src: url("../fonts/NexaBold.ttf.eot?") format("eot"), url("../fonts/NexaBold.ttf.woff2") format("woff2"), url("../fonts/NexaBold.ttf.woff") format("woff"), url("../fonts/NexaBold.ttf.ttf") format("truetype"), url("../fonts/NexaBold.ttf.svg#NexaBold") format("svg");
+  src: url("../fonts/NexaBold.ttf.eot?") format("eot"), url("../fonts/NexaBold.ttf.woff") format("woff"), url("../fonts/NexaBold.ttf.ttf") format("truetype"), url("../fonts/NexaBold.ttf.svg#NexaBold") format("svg");
 }
 
-.navbar-red .navbar-toggler i, .navbar-red .navbar-nav .active > .nav-link, .navbar-red .navbar-nav .nav-link.active, .navbar-red .navbar-nav .nav-link.show, .navbar-red .navbar-nav .show > .nav-link, .navbar-red .navbar-nav .nav-link {
+@font-face {
+  font-family: "SegoeUI";
+  src: url("../fonts/segoeui.eot?") format("eot"), url("../fonts/segoeui.woff") format("woff"), url("../fonts/segoeui.ttf") format("truetype"), url("../fonts/segoeui.svg#SegoeUI") format("svg");
+}
+
+.navbar-red .navbar-toggler i, .navbar-red .navbar-nav .active > .nav-link, .navbar-red .navbar-nav .nav-link.active, .navbar-red .navbar-nav .nav-link.show, .navbar-red .navbar-nav .show > .nav-link, .navbar-red .navbar-nav .nav-link, .navbar-red .nav-item {
   color: #911c1c;
+}
+
+.section-regressiva, .section-cta {
+  background-size: cover;
+  background-position: center;
+  background-image: url(../images/fundocontagemregressiva.jpg);
+  background-repeat: no-repeat;
+  color: #ffffff;
 }
 
 .scrolled {
@@ -31,7 +44,6 @@ body {
 .navbar-red .nav-item {
   font-size: 20px;
   font-family: "NexaBold";
-  color: #911c1c;
   line-height: 1.504;
   margin-right: 15px;
 }
@@ -100,5 +112,92 @@ body {
   border: 0px;
   color: #ffffff;
   border-radius: 15px;
+}
+
+.sobre-section {
+  padding: 30px 90px;
+  line-height: 1.124;
+}
+
+.sobre-section img {
+  width: 100%;
+}
+
+.sobre-section p {
+  font-family: "'Times New Roman', Times, serif";
+  font-size: 18px;
+}
+
+.btn-edicoes-anteriores {
+  font-family: "SegoeUI";
+  font-size: 25px;
+  border-radius: 0;
+  color: #ffffff;
+  background-color: #911c1c;
+  border-color: #911c1c;
+}
+
+.btn-edicoes-anteriores:hover, .btn-edicoes-anteriores:visited, .btn-edicoes-anteriores:active, .btn-edicoes-anteriores:focus {
+  background-color: #801C1C !important;
+  border-color: #801C1C !important;
+}
+
+.btn-edicoes-anteriores:focus, .btn-edicoes-anteriores:not(:disabled):not(.disabled).active:focus, .btn-edicoes-anteriores:not(:disabled):not(.disabled):active:focus {
+  box-shadow: 0 0 0 0.2rem rgba(145, 28, 28, 0.5);
+}
+
+.section-regressiva {
+  padding: 50px;
+}
+
+.btn-cta {
+  color: #ffffff;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-color: #ffffff;
+  background: #00FC3C;
+  border-radius: 10px;
+}
+
+.section-cta {
+  padding: 60px;
+}
+
+.section-cta p {
+  font-size: 35px;
+  font-weight: 600;
+}
+
+footer {
+  background-color: #2B2B2B;
+  padding: 50px;
+  padding-bottom: 20px;
+}
+
+footer .footer-left {
+  border-right: 1px #ffffff;
+  border-right-style: dashed;
+}
+
+footer .footer-left img {
+  width: 100%;
+}
+
+footer .footer-left p {
+  line-height: 1em;
+}
+
+footer .footer-right img {
+  width: 30%;
+}
+
+footer .footer-right p {
+  font-size: 14px;
+}
+
+footer P {
+  margin: 1em 0;
+  color: #ffffff;
+  font-size: 18px;
 }
 /*# sourceMappingURL=style.css.map */
