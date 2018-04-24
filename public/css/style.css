@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: "NexaLight";
+  src: url("../fonts/NexaLight.ttf.eot?") format("eot"), url("../fonts/NexaLight.ttf.woff") format("woff"), url("../fonts/NexaLight.ttf.ttf") format("truetype"), url("../fonts/NexaLight.ttf.svg#NexaLight") format("svg");
+}
+
+@font-face {
   font-family: "SegoeUI";
   src: url("../fonts/segoeui.eot?") format("eot"), url("../fonts/segoeui.woff") format("woff"), url("../fonts/segoeui.ttf") format("truetype"), url("../fonts/segoeui.svg#SegoeUI") format("svg");
 }
@@ -148,6 +153,7 @@ body {
 
 .section-regressiva {
   padding: 50px;
+  font-family: "NexaBold";
 }
 
 .btn-cta {
@@ -159,13 +165,68 @@ body {
   border-radius: 10px;
 }
 
+.section-evento {
+  padding: 50px 0;
+  text-align: center;
+  font-family: "NexaLight";
+}
+
+.section-evento img {
+  width: 85%;
+  margin-bottom: 10px;
+}
+
+.section-evento .tit-comunidade {
+  line-height: 50px;
+}
+
+.section-evento p {
+  text-align: left;
+  font-size: 16px;
+}
+
+.section-convidados h3 {
+  text-align: center;
+  font-family: "NexaBold";
+  padding-bottom: 30px;
+}
+
+.section-convidados .row .col-sm-2 {
+  margin: 0px;
+  padding: 0px;
+}
+
+.section-agenda {
+  background-color: #514C4C;
+  color: #ffffff;
+  padding: 50px;
+}
+
+.section-agenda h3 {
+  font-family: "NexaBold";
+  font-weight: 600;
+}
+
 .section-cta {
   padding: 60px;
 }
 
 .section-cta p {
+  font-family: "NexaBold";
   font-size: 35px;
   font-weight: 600;
+}
+
+.section-apoio {
+  padding: 50px;
+}
+
+.section-apoio h3 {
+  font-family: "NexaBold";
+}
+
+.section-apoio h3 span {
+  color: #02771E;
 }
 
 footer {

@@ -1,5 +1,6 @@
 @import "_mixing.scss";
 @include font-face(NexaBold, "../fonts/NexaBold.ttf");
+@include font-face(NexaLight, "../fonts/NexaLight.ttf");
 @include font-face(SegoeUI, "../fonts/segoeui");
 $color-btn: #911c1c;
 %shared-menu-color {
@@ -150,6 +151,7 @@ body {
 .section-regressiva {
   @extend %shared-background-red;
   padding: 50px;  
+  font-family: "NexaBold";
 }
 
 .btn-cta {
@@ -161,16 +163,76 @@ body {
   border-radius: 10px;
 }
 
+
+.section-evento{
+  padding:50px 0;
+  text-align: center;
+  font-family: "NexaLight";
+
+  img{
+    width: 85%;
+    margin-bottom:10px;
+  }
+
+  .tit-comunidade{
+    line-height:50px;
+  }
+  p{
+   text-align: left;
+   font-size:16px;
+   
+  }
+}
+
+.section-convidados{
+  h3{
+    text-align: center;
+    font-family: "NexaBold";
+    padding-bottom: 30px;
+  }
+
+  .row{
+    .col-sm-2{
+      margin:0px;
+      padding: 0px;
+    }
+  }
+}
+
+.section-agenda{
+  background-color: #514C4C;
+  color:#ffffff;
+  padding:50px;
+
+  h3{
+
+    font-family: "NexaBold";    
+    font-weight: 600;
+  }
+}
+
 .section-cta {
   @extend %shared-background-red;
 
   padding: 60px;
 
   p{
+    font-family: "NexaBold";
     font-size: 35px;
     font-weight: 600;
   }
   // height: 200px;
+}
+
+.section-apoio{
+  padding:50px;
+
+  h3{
+    font-family: "NexaBold";
+    span{
+      color:#02771E;
+    }
+  }
 }
 
 footer {
@@ -201,3 +263,7 @@ footer {
     font-size: 18px;
   }
 }
+
+
+
+
