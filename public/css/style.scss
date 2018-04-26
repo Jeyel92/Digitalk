@@ -41,6 +41,7 @@ body {
   /*overflow: hidden;*/
 }
 
+
 .navbar-red {
   .navbar-toggler {
     color: rgba(0, 0, 0, .5);
@@ -77,6 +78,12 @@ body {
   .navbar-brand{
     width: 231px;
   }
+}
+
+#home{
+  
+    padding-top: 0 ;
+  
 }
 
 .home-section {
@@ -134,7 +141,7 @@ padding:0px;
 }
 
 .sobre-section {
-  padding: 30px 90px;
+  padding: 0px 30px 90px;
   line-height: 1.124;
   img {
     width: 100%

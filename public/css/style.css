@@ -66,6 +66,10 @@ body {
   width: 231px;
 }
 
+#home {
+  padding-top: 0;
+}
+
 .home-section {
   background-image: url(../images/head.jpg);
   background-repeat: no-repeat;
@@ -138,7 +142,7 @@ body {
 }
 
 .sobre-section {
-  padding: 30px 90px;
+  padding: 0px 30px 90px;
   line-height: 1.124;
 }
 
