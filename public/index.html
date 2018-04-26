@@ -18,41 +18,42 @@
     <title>Talking Digital Conf</title>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-md navbar-red fixed-top bg-transparent ">
-        <img class="navbar-brand" src="images/logo.png" >
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fa fa-bars"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav mr-auto col-md-10 offset-md-2">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Palestrantes</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Agenda</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Apoiadores</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Localização</a>
-                </li>
-            </ul>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-        </div>
-    </nav>
     <div class="page">
-        <section class="container-fluid">
+            <nav class="navbar navbar-expand-md navbar-red fixed-top bg-transparent ">
+                    <img class="navbar-brand" src="images/logo.png" >
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarCollapse">
+                        <ul class="navbar-nav mr-auto col-md-10 offset-md-2">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#home">Home
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#sobre">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#palestrantes">Palestrantes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#agenda">Agenda</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#apoiadores">Apoiadores</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#local">Localização</a>
+                            </li>
+                        </ul>
+            
+                    </div>
+                </nav>
+        <section class="container-fluid" id="home">
             <div class="row">
                 <div class="home-section">
 
@@ -79,8 +80,8 @@
                 </div>
             </div>
         </section>
-        <section class="container-fluid">
-            <div class="sobre-section ">
+        <section class="container-fluid" id="sobre">
+            <div class="sobre-section " >
                 <div class="row ">
 
                     <div class="col-sm-5">
@@ -119,7 +120,7 @@
 
             </div>
         </section>
-        <section class="container-fluid section-regressiva text-center">
+        <section class="container-fluid section-regressiva text-center" >
 
             <h3>NÃO FIQUE DE FORA, FALTAM PARA O EVENTO</h3>
 
@@ -128,7 +129,7 @@
 
             <a class="btn btn-success btn-cta " href="#" role="button">INSCREVA-SE</a>
         </section>
-        <section class="container section-evento">
+        <section class="container section-evento" >
             <div class="row">
                 <div class="col-sm-3 ">
                     <img src="images/participantes-block.png">
@@ -161,10 +162,13 @@
                 </div>
             </div>
         </section>
-        <section class="container-fluid section-convidados">
+        <section class="container-fluid section-convidados" id="palestrantes">
 
             <h3>PARTICIPANTES CONVIDADOS</h3>
-            <div class="row">
+
+            <!--TODO Retirar quando disponibilizado a lista de participantes-->
+            <h4>Em Breve</h4>
+            <!-- <div class="row">
                 <div class="col-sm-2">
                     <img src="images/teste.jpg" style="width:100%">
                 </div>
@@ -184,10 +188,11 @@
                     <img src="images/teste.jpg" style="width:100%">
                 </div>
 
-            </div>
+            </div> -->
         </section>
-        <section class="container-fluid section-agenda text-center">
+        <section class="container-fluid section-agenda text-center" id="agenda">
             <h3>PROGRAMAÇÃO</h3>
+            <h4>Em Breve</h4>
         </section>
         <section class="container-fluid section-cta">
             <div class="container">
@@ -201,8 +206,9 @@
                 </div>
             </div>
         </section>
-        <section class="container section-apoio text-center">
+        <section class="container section-apoio text-center" id="apoiadores">
             <h3>APOIADORES & <span>REALIZAÇÃO</span></h3>
+            <h4>Em Breve</h4>
         </section>
         <footer>
             <div class="container">

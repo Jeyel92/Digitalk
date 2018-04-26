@@ -25,6 +25,15 @@
   color: #ffffff;
 }
 
+.section-convidados h4, .section-agenda h4, .section-apoio h4 {
+  font-family: "NexaLight";
+  padding: 30px;
+}
+
+.container-fluid {
+  padding-top: 80px;
+}
+
 .scrolled {
   background-color: #ffffff !important;
   transition: 0.3s;
@@ -54,7 +63,7 @@ body {
 }
 
 .navbar-red .navbar-brand {
-  widows: 231px;
+  width: 231px;
 }
 
 .home-section {
@@ -195,8 +204,11 @@ body {
   font-size: 16px;
 }
 
-.section-convidados h3 {
+.section-convidados {
   text-align: center;
+}
+
+.section-convidados h3 {
   font-family: "NexaBold";
   padding-bottom: 30px;
 }

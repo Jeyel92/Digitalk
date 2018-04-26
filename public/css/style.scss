@@ -16,6 +16,15 @@ $color-btn: #911c1c;
   color: #ffffff;
 }
 
+%h4-em-breve{
+  font-family: "NexaLight";
+  padding: 30px;
+}
+
+.container-fluid{
+  padding-top: 80px;
+}
+
 .scrolled {
   background-color: #ffffff !important;
   transition: 0.3s;
@@ -66,7 +75,7 @@ body {
   }
 
   .navbar-brand{
-    widows: 231px;
+    width: 231px;
   }
 }
 
@@ -195,10 +204,15 @@ padding:0px;
 }
 
 .section-convidados{
+  text-align: center;
   h3{
-    text-align: center;
+   
     font-family: "NexaBold";
     padding-bottom: 30px;
+  }
+
+  h4{
+   @extend %h4-em-breve;
   }
 
   .row{
@@ -219,6 +233,12 @@ padding:0px;
     font-family: "NexaBold";    
     font-weight: 600;
   }
+
+ 
+    h4{
+      @extend %h4-em-breve;
+     }
+  
 }
 
 .section-cta {
@@ -243,6 +263,10 @@ padding:0px;
       color:#02771E;
     }
   }
+
+  h4{
+    @extend %h4-em-breve;
+   }
 }
 
 footer {
