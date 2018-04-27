@@ -152,6 +152,7 @@ padding:0px;
   }
 }
 
+
 .btn-edicoes-anteriores {
   font-family: "SegoeUI";
   font-size: 25px;
@@ -233,7 +234,8 @@ padding:0px;
 .section-agenda{
   background-color: #514C4C;
   color:#ffffff;
-  padding:50px;
+  padding-bottom:50px;
+ 
 
   h3{
 
@@ -308,6 +310,12 @@ footer {
   }
 }
 
-
+.collapse{
+  margin:0 auto;
+  h4{
+    
+  @extend %h4-em-breve;
+ }
+}
 
 

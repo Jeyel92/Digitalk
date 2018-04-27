@@ -25,7 +25,7 @@
   color: #ffffff;
 }
 
-.section-convidados h4, .section-agenda h4, .section-apoio h4 {
+.section-convidados h4, .section-agenda h4, .section-apoio h4, .collapse h4 {
   font-family: "NexaLight";
   padding: 30px;
 }
@@ -225,7 +225,7 @@ body {
 .section-agenda {
   background-color: #514C4C;
   color: #ffffff;
-  padding: 50px;
+  padding-bottom: 50px;
 }
 
 .section-agenda h3 {
@@ -286,5 +286,9 @@ footer P {
   margin: 1em 0;
   color: #ffffff;
   font-size: 14px;
+}
+
+.collapse {
+  margin: 0 auto;
 }
 /*# sourceMappingURL=style.css.map */
