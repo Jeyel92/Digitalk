@@ -95,7 +95,7 @@ body {
 }
 
 .home-section .home-destaque .destaque {
-  background-image: url(../images/imagem_mote.png);
+  background-image: url(../images/mote.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 720px;
@@ -139,6 +139,7 @@ body {
   color: #ffffff;
   border-radius: 15px;
   font-family: "NexaLight";
+  text-transform: uppercase;
 }
 
 .sobre-section {

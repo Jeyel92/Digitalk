@@ -104,7 +104,7 @@ body {
     margin: 0;
     margin-top: 15%;
     .destaque {
-      background-image: url(../images/imagem_mote.png);
+      background-image: url(../images/mote.png);
       background-repeat: no-repeat;
       background-size: cover;
       height: 720px;
@@ -134,6 +134,7 @@ padding:0px;
         color: #ffffff;
         border-radius: 15px;
         font-family: "NexaLight";
+        text-transform: uppercase;
       }
     }
     
