@@ -1,3 +1,4 @@
+
 $(function() {
     var header = $(".navbar");
   
@@ -9,4 +10,17 @@ $(function() {
             header.removeClass("scrolled");
         }
     });
+
+    $(document).ready(function(){
+       
+    });
 })
+
+// function update(){
+//   document.getElementById("counter").innerHTML =  countdown( new Date(2020, 0, 1) ).toString();
+//   // animationFrame(update());
+//   update();
+// }
+
+// update();
+
