@@ -145,7 +145,7 @@ padding:0px;
   padding: 0px 30px 90px;
   line-height: 1.124;
   img {
-    width: 100%
+    //width: 100%
   }
   p {
     font-family: "NexaLight";
@@ -296,10 +296,19 @@ footer {
   }
   .footer-right {
     img {
-      width: 35%;
+     // width: 35%;
+    }
+    h5{
+      color:#ffffff;
+      margin-top: 1.5rem;
     }
      p {
       padding: 0px 40px;
+
+      a{
+        text-decoration:none;
+        color:#ffffff;
+      }
      }
   }
 

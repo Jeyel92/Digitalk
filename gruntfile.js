@@ -12,12 +12,24 @@ module.exports = function(grunt) {
              dist: {
                  src: 'dist'
              }
-        }
+        },
+        uglify: {
+            options: {
+              mangle: false
+            },
+            my_target: {
+              files: {
+                'public/js/requestAnimationFrame.min.js': ['public/js/requestAnimationFrame.js'],
+                'public/js/scripts.min.js': ['public/js/scripts.js']
+              }
+            }
+          }
  });
 
- grunt.registerTask('dist', ['clean', 'copy']);
+ grunt.registerTask('dist', ['uglify','clean', 'copy']);
  grunt.registerTask('default', ['dist']);
 
  grunt.loadNpmTasks('grunt-contrib-copy');
  grunt.loadNpmTasks('grunt-contrib-clean');
+ grunt.loadNpmTasks('grunt-contrib-uglify');
 };

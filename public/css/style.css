@@ -147,10 +147,6 @@ body {
   line-height: 1.124;
 }
 
-.sobre-section img {
-  width: 100%;
-}
-
 .sobre-section p {
   font-family: "NexaLight";
   font-size: 18px;
@@ -275,12 +271,18 @@ footer .footer-left p {
   line-height: 1em;
 }
 
-footer .footer-right img {
-  width: 35%;
+footer .footer-right h5 {
+  color: #ffffff;
+  margin-top: 1.5rem;
 }
 
 footer .footer-right p {
   padding: 0px 40px;
+}
+
+footer .footer-right p a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 footer P {
