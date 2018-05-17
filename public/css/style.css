@@ -153,13 +153,22 @@ body {
 }
 
 .sobre-section {
-  padding: 0px 30px 90px;
+  padding: 0px 30px 30px;
   line-height: 1.124;
 }
 
 .sobre-section p {
   font-family: "NexaLight";
   font-size: 18px;
+}
+
+.card {
+  text-align: center;
+  padding: 20px 0px;
+}
+
+.card iframe {
+  min-height: 200px;
 }
 
 .btn-edicoes-anteriores {
