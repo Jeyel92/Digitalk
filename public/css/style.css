@@ -142,6 +142,16 @@ body {
   text-transform: uppercase;
 }
 
+.home-section .home-cta .col-sm-6 button:active, .home-section .home-cta .col-sm-6 button:focus {
+  background-color: #C43131 !important;
+  border-color: #C43131 !important;
+}
+
+.home-section .home-cta .col-sm-6 button a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .sobre-section {
   padding: 0px 30px 90px;
   line-height: 1.124;

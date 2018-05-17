@@ -135,6 +135,17 @@ padding:0px;
         border-radius: 15px;
         font-family: "NexaLight";
         text-transform: uppercase;
+
+        &:active,
+        &:focus {
+          background-color: #C43131 !important;
+          border-color: #C43131 !important;
+        }
+        
+        a{
+          text-decoration: none;
+          color:inherit;
+        }
       }
     }
     
