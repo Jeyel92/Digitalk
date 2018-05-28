@@ -130,22 +130,44 @@ body {
         border-radius: 15px;
         font-family: "NexaLight";
         text-transform: uppercase;
+
+        &:active,
+        &:focus {
+          background-color: #C43131 !important;
+          border-color: #C43131 !important;
+        }
+
+        a{
+          text-decoration: none;
+          color:inherit;
+        }
       }
     }
   }
 }
 
 .sobre-section {
-  padding: 0px 30px 90px;
+  padding: 0px 30px 30px;
   line-height: 1.124;
-  img {
+  //img {
     //width: 100%
-  }
+  //}
   p {
     font-family: "NexaLight";
     font-size: 18px;
   }
 }
+
+
+.card{
+ text-align: center;
+ padding:20px 0px;
+
+  iframe{
+    min-height: 200px;
+  }
+}
+
 
 .btn-edicoes-anteriores {
   font-family: "SegoeUI";
@@ -337,11 +359,13 @@ footer {
     }
   }
   .footer-right {
-    img {
-      // width: 35%;
-    }
-    h5 {
-      color: #ffffff;
+
+    //img {
+     // width: 35%;
+    //}
+    h5{
+      color:#ffffff;
+
       margin-top: 1.5rem;
     }
     p {
