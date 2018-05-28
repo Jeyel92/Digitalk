@@ -12,16 +12,15 @@ $color-btn: #911c1c;
   background-position: center;
   background-image: url(../images/fundocontagemregressiva.jpg);
   background-repeat: no-repeat;
-
   color: #ffffff;
 }
 
-%h4-em-breve{
+%h4-em-breve {
   font-family: "NexaLight";
   padding: 30px;
 }
 
-.container-fluid{
+.container-fluid {
   padding-top: 80px;
 }
 
@@ -40,7 +39,6 @@ body {
   margin: 0px;
   /*overflow: hidden;*/
 }
-
 
 .navbar-red {
   .navbar-toggler {
@@ -74,16 +72,13 @@ body {
     line-height: 1.504;
     margin-right: 15px;
   }
-
-  .navbar-brand{
+  .navbar-brand {
     width: 231px;
   }
 }
 
-#home{
-  
-    padding-top: 0 ;
-  
+#home {
+  padding-top: 0;
 }
 
 .home-section {
@@ -126,8 +121,8 @@ body {
     p {
       font-size: 21px
     }
-    .col-sm-6{
-padding:0px;
+    .col-sm-6 {
+      padding: 0px;
       button {
         background: linear-gradient(-90deg, #911c1c, red);
         border: 0px;
@@ -137,7 +132,6 @@ padding:0px;
         text-transform: uppercase;
       }
     }
-    
   }
 }
 
@@ -152,7 +146,6 @@ padding:0px;
     font-size: 18px;
   }
 }
-
 
 .btn-edicoes-anteriores {
   font-family: "SegoeUI";
@@ -177,7 +170,7 @@ padding:0px;
 
 .section-regressiva {
   @extend %shared-background-red;
-  padding: 50px;  
+  padding: 50px;
   font-family: "NexaBold";
 }
 
@@ -191,99 +184,148 @@ padding:0px;
   font-family: "NexaLight";
 }
 
-
-.section-evento{
-  padding:50px 0;
+.section-evento {
+  padding: 50px 0;
   text-align: center;
   font-family: "NexaLight";
-
-  img{
+  img {
     width: 85%;
-    margin-bottom:10px;
+    margin-bottom: 10px;
   }
-
-  .tit-comunidade{
-    line-height:50px;
+  .tit-comunidade {
+    line-height: 50px;
   }
-  p{
-   text-align: left;
-   font-size:16px;
-   
+  p {
+    text-align: left;
+    font-size: 16px;
   }
 }
 
-.section-convidados{
+.section-convidados {
   text-align: center;
-  h3{
-   
+  h3 {
     font-family: "NexaBold";
     padding-bottom: 30px;
   }
-
-  h4{
-   @extend %h4-em-breve;
+  h4 {
+    @extend %h4-em-breve;
   }
-
-  .row{
-    .col-sm-2{
-      margin:0px;
+  .row {
+    .col-sm-2 {
+      margin: 0px;
       padding: 0px;
     }
   }
 }
 
-.section-agenda{
+.section-agenda {
   background-color: #514C4C;
-  color:#ffffff;
-  padding-bottom:50px;
- 
-
-  h3{
-
-    font-family: "NexaBold";    
+  color: #ffffff;
+  padding-bottom: 50px;
+  h3 {
+    font-family: "NexaBold";
     font-weight: 600;
   }
+  h4 {
+    @extend %h4-em-breve;
+  }
+  .programacao {
+    padding: 0px 15px;   
+    max-width: 94%;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 14px;
 
- 
-    h4{
-      @extend %h4-em-breve;
-     }
-  
+    height: 145px;
+   /* margin-top: 30px;*/
+    font-size: 1.2rem;
+    @media screen and (max-width: 802px) {
+      .col-sm-3 {
+        width: 25%
+      }
+    }
+    .horarios {
+      @media screen and (min-width: 768px) {
+        background-image: url(../images/horarios.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 145px;
+      }
+      
+      @media screen and (max-width: 767px) {
+        background: #ffffff;
+        width: 35%;
+        height: 100%;
+        border-radius: 50px;
+      }     
+      
+
+      p {
+        color: #000000;
+        margin-left: 12px;
+        padding-top: 40px;
+        text-align: left;
+        font-size: 21px;
+        width: 40%;
+
+        @media screen and (max-width: 767px) {
+          padding: 0px;         
+          text-align: center;
+          margin-left: 0px;
+          width: 30%;
+        }
+      }
+    }
+    p {
+      padding: 0px;
+      font-weight: 500;
+    }
+    .p1 {
+      padding-top: 45px;
+
+      @media screen and (max-width: 767px) {
+        padding-top: 15px;
+      }
+    }
+    .p2 {
+      padding-top: 55px;
+    }
+
+    .col4{
+      @media screen and (max-width: 767px) {
+      display:none;
+      }
+    }
+  }
 }
 
 .section-cta {
   @extend %shared-background-red;
-
   padding: 60px;
-
-  p{
+  p {
     font-family: "NexaBold";
     font-size: 35px;
     font-weight: 600;
-  }
-  // height: 200px;
+  } // height: 200px;
 }
 
-.section-apoio{
-  padding:50px;
-
-  h3{
+.section-apoio {
+  padding: 50px;
+  h3 {
     font-family: "NexaBold";
-    span{
-      color:#02771E;
+    span {
+      color: #02771E;
     }
   }
-
-  h4{
+  h4 {
     @extend %h4-em-breve;
-   }
+  }
 }
 
 footer {
   background-color: #2B2B2B;
   padding: 50px;
   padding-bottom: 20px;
-
   .footer-left {
     border-right: 1px #ffffff;
     border-right-style: dashed;
@@ -296,36 +338,30 @@ footer {
   }
   .footer-right {
     img {
-     // width: 35%;
+      // width: 35%;
     }
-    h5{
-      color:#ffffff;
+    h5 {
+      color: #ffffff;
       margin-top: 1.5rem;
     }
-     p {
+    p {
       padding: 0px 40px;
-
-      a{
-        text-decoration:none;
-        color:#ffffff;
+      a {
+        text-decoration: none;
+        color: #ffffff;
       }
-     }
+    }
   }
-
   P {
     margin: 1em 0;
-    color: #ffffff;
-    //font-size: 18px;
+    color: #ffffff; //font-size: 18px;
     font-size: 14px;
   }
 }
 
-.collapse{
-  margin:0 auto;
-  h4{
-    
-  @extend %h4-em-breve;
- }
+.collapse {
+  margin: 0 auto;
+  h4 {
+    @extend %h4-em-breve;
+  }
 }
-
-
