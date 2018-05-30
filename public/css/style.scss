@@ -124,22 +124,21 @@ body {
     .col-sm-6 {
       padding: 0px;
       button {
-        background: linear-gradient(-90deg, #911c1c, red);
+        background: linear-gradient(-90deg, #911c1c, red)   !important;
         border: 0px;
         color: #ffffff;
         border-radius: 15px;
         font-family: "NexaLight";
         text-transform: uppercase;
-
+        white-space: nowrap;
         &:active,
         &:focus {
           background-color: #C43131 !important;
           border-color: #C43131 !important;
         }
-
-        a{
+        a {
           text-decoration: none;
-          color:inherit;
+          color: inherit;
         }
       }
     }
@@ -148,9 +147,8 @@ body {
 
 .sobre-section {
   padding: 0px 30px 30px;
-  line-height: 1.124;
-  //img {
-    //width: 100%
+  line-height: 1.124; //img {
+  //width: 100%
   //}
   p {
     font-family: "NexaLight";
@@ -158,24 +156,22 @@ body {
   }
 }
 
-
-.card{
- text-align: center;
- padding:20px 0px;
-
-  iframe{
+.card {
+  text-align: center;
+  padding: 20px 0px;
+  iframe {
     min-height: 200px;
   }
 }
-
 
 .btn-edicoes-anteriores {
   font-family: "SegoeUI";
   font-size: 25px;
   border-radius: 0;
   color: #ffffff;
-  background-color: $color-btn;
-  border-color: $color-btn;
+  background-color: $color-btn !important;
+  border-color: $color-btn !important;
+  margin: 0px !important;
   &:hover,
   &:visited,
   &:active,
@@ -188,8 +184,13 @@ body {
   &:not(:disabled):not(.disabled):active:focus {
     box-shadow: 0 0 0 0.2rem rgba(145, 28, 28, .5);
   }
-}
 
+  
+}
+.btn-primary:not([disabled]):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
+  background-color: #C43131 !important;
+  border-color: #C43131 !important;
+}
 .section-regressiva {
   @extend %shared-background-red;
   padding: 50px;
@@ -200,10 +201,11 @@ body {
   color: #ffffff;
   font-weight: 600;
   text-transform: uppercase;
-  border-color: #ffffff;
+  border: 1px solid #ffffff;
   background: #00FC3C;
   border-radius: 10px;
   font-family: "NexaLight";
+  white-space: nowrap;
 }
 
 .section-evento {
@@ -237,6 +239,23 @@ body {
       margin: 0px;
       padding: 0px;
     }
+    .card-hover {
+      padding: 50px;
+      text-align: left;
+      p {
+        font-size: 0.8rem;
+        margin-bottom: 0px;
+        &:nth-child(4n) {
+          margin-top: 10px;
+          i {
+            color: #ffffff;
+            padding: 5px;
+            border: 1px solid;
+            border-radius: 15px;
+          }
+        }
+      }
+    }
   }
 }
 
@@ -252,15 +271,16 @@ body {
     @extend %h4-em-breve;
   }
   .programacao {
-    padding: 0px 15px;   
+    padding: 0px 15px;
     max-width: 94%;
     margin: 0 auto;
     overflow: hidden;
     margin-bottom: 14px;
-
     height: 145px;
-   /* margin-top: 30px;*/
     font-size: 1.2rem;
+    @media screen and (min-width: 768px) {
+      margin-top: 30px;
+    }
     @media screen and (max-width: 802px) {
       .col-sm-3 {
         width: 25%
@@ -273,15 +293,12 @@ body {
         background-size: cover;
         height: 145px;
       }
-      
       @media screen and (max-width: 767px) {
         background: #ffffff;
         width: 35%;
         height: 100%;
         border-radius: 50px;
-      }     
-      
-
+      }
       p {
         color: #000000;
         margin-left: 12px;
@@ -289,9 +306,8 @@ body {
         text-align: left;
         font-size: 21px;
         width: 40%;
-
         @media screen and (max-width: 767px) {
-          padding: 0px;         
+          padding: 0px;
           text-align: center;
           margin-left: 0px;
           width: 30%;
@@ -303,8 +319,7 @@ body {
       font-weight: 500;
     }
     .p1 {
-      padding-top: 45px;
-
+      padding: 45px 20px 0px 20px;
       @media screen and (max-width: 767px) {
         padding-top: 15px;
       }
@@ -312,12 +327,13 @@ body {
     .p2 {
       padding-top: 55px;
     }
-
-    .col4{
+    .col4 {
       @media screen and (max-width: 767px) {
-      display:none;
+        display:none;
       }
-    }
+    } // .cta-agenda {
+    // background-color: #02771E
+    // }
   }
 }
 
@@ -348,25 +364,23 @@ footer {
   background-color: #2B2B2B;
   padding: 50px;
   padding-bottom: 20px;
+  h5 {
+    color: #ffffff;
+    margin-top: 1.5rem;
+  }
   .footer-left {
     border-right: 1px #ffffff;
-    border-right-style: dashed;
-    img {
-      width: 70%;
-    }
+    border-right-style: dashed; // img {
+    //   width: 70%;
+    // }
     p {
       line-height: 1em;
+      font-size: 18px
     }
   }
   .footer-right {
-
-    //img {
-     // width: 35%;
-    //}
-    h5{
-      color:#ffffff;
-
-      margin-top: 1.5rem;
+    img {
+      width: 35%;
     }
     p {
       padding: 0px 40px;

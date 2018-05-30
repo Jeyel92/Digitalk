@@ -134,12 +134,13 @@ body {
 }
 
 .home-section .home-cta .col-sm-6 button {
-  background: linear-gradient(-90deg, #911c1c, red);
+  background: linear-gradient(-90deg, #911c1c, red) !important;
   border: 0px;
   color: #ffffff;
   border-radius: 15px;
   font-family: "NexaLight";
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .home-section .home-cta .col-sm-6 button:active, .home-section .home-cta .col-sm-6 button:focus {
@@ -176,8 +177,9 @@ body {
   font-size: 25px;
   border-radius: 0;
   color: #ffffff;
-  background-color: #911c1c;
-  border-color: #911c1c;
+  background-color: #911c1c !important;
+  border-color: #911c1c !important;
+  margin: 0px !important;
 }
 
 .btn-edicoes-anteriores:hover, .btn-edicoes-anteriores:visited, .btn-edicoes-anteriores:active, .btn-edicoes-anteriores:focus {
@@ -189,6 +191,11 @@ body {
   box-shadow: 0 0 0 0.2rem rgba(145, 28, 28, 0.5);
 }
 
+.btn-primary:not([disabled]):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+  background-color: #C43131 !important;
+  border-color: #C43131 !important;
+}
+
 .section-regressiva {
   padding: 50px;
   font-family: "NexaBold";
@@ -198,10 +205,11 @@ body {
   color: #ffffff;
   font-weight: 600;
   text-transform: uppercase;
-  border-color: #ffffff;
+  border: 1px solid #ffffff;
   background: #00FC3C;
   border-radius: 10px;
   font-family: "NexaLight";
+  white-space: nowrap;
 }
 
 .section-evento {
@@ -238,6 +246,27 @@ body {
   padding: 0px;
 }
 
+.section-convidados .row .card-hover {
+  padding: 50px;
+  text-align: left;
+}
+
+.section-convidados .row .card-hover p {
+  font-size: 0.8rem;
+  margin-bottom: 0px;
+}
+
+.section-convidados .row .card-hover p:nth-child(4n) {
+  margin-top: 10px;
+}
+
+.section-convidados .row .card-hover p:nth-child(4n) i {
+  color: #ffffff;
+  padding: 5px;
+  border: 1px solid;
+  border-radius: 15px;
+}
+
 .section-agenda {
   background-color: #514C4C;
   color: #ffffff;
@@ -256,8 +285,13 @@ body {
   overflow: hidden;
   margin-bottom: 14px;
   height: 145px;
-  /* margin-top: 30px;*/
   font-size: 1.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .section-agenda .programacao {
+    margin-top: 30px;
+  }
 }
 
 @media screen and (max-width: 802px) {
@@ -308,7 +342,7 @@ body {
 }
 
 .section-agenda .programacao .p1 {
-  padding-top: 45px;
+  padding: 45px 20px 0px 20px;
 }
 
 @media screen and (max-width: 767px) {
@@ -355,22 +389,23 @@ footer {
   padding-bottom: 20px;
 }
 
+footer h5 {
+  color: #ffffff;
+  margin-top: 1.5rem;
+}
+
 footer .footer-left {
   border-right: 1px #ffffff;
   border-right-style: dashed;
 }
 
-footer .footer-left img {
-  width: 70%;
-}
-
 footer .footer-left p {
   line-height: 1em;
+  font-size: 18px;
 }
 
-footer .footer-right h5 {
-  color: #ffffff;
-  margin-top: 1.5rem;
+footer .footer-right img {
+  width: 35%;
 }
 
 footer .footer-right p {
