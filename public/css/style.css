@@ -191,7 +191,8 @@ body {
   box-shadow: 0 0 0 0.2rem rgba(145, 28, 28, 0.5);
 }
 
-.btn-primary:not([disabled]):not(.disabled):active, .show > .btn-primary.dropdown-toggle {
+.btn-primary:not([disabled]):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
   background-color: #C43131 !important;
   border-color: #C43131 !important;
 }
@@ -353,6 +354,19 @@ body {
 
 .section-agenda .programacao .p2 {
   padding-top: 55px;
+}
+
+@media screen and (max-width: 600px) {
+  .section-agenda .programacao .desc-big {
+    width: 65% !important;
+  }
+  .section-agenda .programacao .desc-big p {
+    font-size: 12px;
+  }
+}
+
+.section-agenda .programacao .desc-big .p2 {
+  padding-top: 30px;
 }
 
 @media screen and (max-width: 767px) {
