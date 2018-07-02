@@ -36,6 +36,7 @@
 
 .scrolled {
   background-color: #ffffff !important;
+  -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
@@ -134,6 +135,7 @@ body {
 }
 
 .home-section .home-cta .col-sm-6 button {
+  background: -webkit-gradient(linear, right top, left top, from(#911c1c), to(red)) !important;
   background: linear-gradient(-90deg, #911c1c, red) !important;
   border: 0px;
   color: #ffffff;
@@ -188,7 +190,8 @@ body {
 }
 
 .btn-edicoes-anteriores:focus, .btn-edicoes-anteriores:not(:disabled):not(.disabled).active:focus, .btn-edicoes-anteriores:not(:disabled):not(.disabled):active:focus {
-  box-shadow: 0 0 0 0.2rem rgba(145, 28, 28, 0.5);
+  -webkit-box-shadow: 0 0 0 0.2rem rgba(145, 28, 28, 0.5);
+          box-shadow: 0 0 0 0.2rem rgba(145, 28, 28, 0.5);
 }
 
 .btn-primary:not([disabled]):not(.disabled):active,
@@ -242,9 +245,14 @@ body {
   padding-bottom: 30px;
 }
 
-.section-convidados .row .col-sm-2 {
+.section-convidados .row .col-sm-3 {
   margin: 0px;
   padding: 0px;
+  max-width: 20%;
+}
+
+.section-convidados .row .img-fluid {
+  width: 100%;
 }
 
 .section-convidados .row .card-hover {
@@ -277,102 +285,66 @@ body {
 .section-agenda h3 {
   font-family: "NexaBold";
   font-weight: 600;
-}
-
-.section-agenda .programacao {
-  padding: 0px 15px;
-  max-width: 94%;
-  margin: 0 auto;
-  overflow: hidden;
-  margin-bottom: 14px;
-  height: 145px;
-  font-size: 1.2rem;
+  margin-bottom: 25px;
 }
 
 @media screen and (min-width: 768px) {
   .section-agenda .programacao {
-    margin-top: 30px;
+    margin-left: 33.333333%;
   }
 }
 
-@media screen and (max-width: 802px) {
-  .section-agenda .programacao .col-sm-3 {
-    width: 25%;
+.section-agenda .programacao img {
+  width: 50%;
+  margin-top: 25px;
+}
+
+.section-agenda .programacao .img55 {
+  width: 53%;
+}
+
+.section-agenda .programacao .img60 {
+  width: 60%;
+}
+
+.section-agenda .programacao .img70 {
+  width: 70%;
+}
+
+.section-agenda .programacao .img85 {
+  width: 85%;
+}
+
+.section-agenda .programacao .img90 {
+  width: 90%;
+}
+
+.section-agenda .programacao .imgConvidados {
+  margin-left: 80px;
+}
+
+@media screen and (max-width: 768px) {
+  .section-agenda .programacao .imgConvidados {
+    margin-left: 40px;
   }
 }
 
-@media screen and (min-width: 768px) {
-  .section-agenda .programacao .horarios {
-    background-image: url(../images/horarios.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 145px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .section-agenda .programacao .horarios {
-    background: #ffffff;
-    width: 35%;
-    height: 100%;
-    border-radius: 50px;
-  }
-}
-
-.section-agenda .programacao .horarios p {
-  color: #000000;
-  margin-left: 12px;
-  padding-top: 40px;
-  text-align: left;
-  font-size: 21px;
-  width: 40%;
-}
-
-@media screen and (max-width: 767px) {
-  .section-agenda .programacao .horarios p {
-    padding: 0px;
-    text-align: center;
-    margin-left: 0px;
-    width: 30%;
-  }
-}
-
-.section-agenda .programacao p {
-  padding: 0px;
+.section-agenda .programacao .imgConvidados p {
+  font-size: 18px;
   font-weight: 500;
+  padding-right: 60px;
 }
 
-.section-agenda .programacao .p1 {
-  padding: 45px 20px 0px 20px;
-}
-
-@media screen and (max-width: 767px) {
-  .section-agenda .programacao .p1 {
-    padding-top: 15px;
-  }
-}
-
-.section-agenda .programacao .p2 {
-  padding-top: 55px;
-}
-
-@media screen and (max-width: 600px) {
-  .section-agenda .programacao .desc-big {
-    width: 65% !important;
-  }
-  .section-agenda .programacao .desc-big p {
+@media screen and (max-width: 768px) {
+  .section-agenda .programacao .imgConvidados p {
     font-size: 12px;
+    font-weight: 500;
   }
 }
 
-.section-agenda .programacao .desc-big .p2 {
-  padding-top: 30px;
-}
-
-@media screen and (max-width: 767px) {
-  .section-agenda .programacao .col4 {
-    display: none;
-  }
+.section-agenda .programacao .imgConvidados p span {
+  font-weight: 300;
+  font-size: 16px;
 }
 
 .section-cta {

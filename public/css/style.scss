@@ -236,9 +236,13 @@ body {
     @extend %h4-em-breve;
   }
   .row {
-    .col-sm-2 {
+    .col-sm-3 {
       margin: 0px;
       padding: 0px;
+      max-width: 20%;
+    }
+    .img-fluid{
+      width: 100%;
     }
     .card-hover {
       padding: 50px;
@@ -267,83 +271,137 @@ body {
   h3 {
     font-family: "NexaBold";
     font-weight: 600;
+    margin-bottom: 25px;
   }
   h4 {
     @extend %h4-em-breve;
   }
+
+ 
+
   .programacao {
-    padding: 0px 15px;
-    max-width: 94%;
-    margin: 0 auto;
-    overflow: hidden;
-    margin-bottom: 14px;
-    height: 145px;
-    font-size: 1.2rem;
     @media screen and (min-width: 768px) {
-      margin-top: 30px;
+      margin-left: 33.333333%;
     }
-    @media screen and (max-width: 802px) {
-      .col-sm-3 {
-        width: 25%
+    img
+    {
+      width: 50%;
+      margin-top:25px
+    }
+
+    .img55{
+      width: 53%;
+    }
+
+    .img60{
+      width: 60%;
+    }
+
+    .img70{
+      width: 70%;
+    }
+
+    .img85{
+      width: 85%;
+    }
+
+    .img90{
+      width: 90%;
+    }
+  
+    .imgConvidados{
+      margin-left:80px;
+      @media screen and (max-width: 768px) {
+        margin-left:40px;
       }
-    }
-    .horarios {
-      @media screen and (min-width: 768px) {
-        background-image: url(../images/horarios.png);
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 145px;
-      }
-      @media screen and (max-width: 767px) {
-        background: #ffffff;
-        width: 35%;
-        height: 100%;
-        border-radius: 50px;
-      }
-      p {
-        color: #000000;
-        margin-left: 12px;
-        padding-top: 40px;
-        text-align: left;
-        font-size: 21px;
-        width: 40%;
-        @media screen and (max-width: 767px) {
-          padding: 0px;
-          text-align: center;
-          margin-left: 0px;
-          width: 30%;
-        }
-      }
-    }
-    p {
-      padding: 0px;
-      font-weight: 500;
-    }
-    .p1 {
-      padding: 45px 20px 0px 20px;
-      @media screen and (max-width: 767px) {
-        padding-top: 15px;
-      }
-    }
-    .p2 {
-      padding-top: 55px;
-    }
-    .desc-big {
-      @media screen and (max-width: 600px) {
-        width: 65% !important;
-        p {
+      p{
+        font-size: 18px;
+        font-weight: 500;
+        padding-right: 60px;
+
+        @media screen and (max-width: 768px) {
           font-size: 12px;
+          font-weight: 500;
+        }
+
+        span{
+          font-weight: 300;
+          font-size:16px;
         }
       }
-      .p2 {
-        padding-top:30px;
-      }
     }
-    .col4 {
-      @media screen and (max-width: 767px) {
-        display:none;
-      }
-    } // .cta-agenda {
+    // padding: 0px 15px;
+    // max-width: 94%;
+    // margin: 0 auto;
+    // overflow: hidden;
+    // margin-bottom: 14px;
+    // height: 145px;
+    // font-size: 1.2rem;
+    // @media screen and (min-width: 768px) {
+    //   margin-top: 30px;
+    // }
+    // @media screen and (max-width: 802px) {
+    //   .col-sm-3 {
+    //     width: 25%
+    //   }
+    // }
+    // .horarios {
+    //   @media screen and (min-width: 768px) {
+    //     background-image: url(../images/horarios.png);
+    //     background-repeat: no-repeat;
+    //     background-size: cover;
+    //     height: 145px;
+    //   }
+    //   @media screen and (max-width: 767px) {
+    //     background: #ffffff;
+    //     width: 35%;
+    //     height: 100%;
+    //     border-radius: 50px;
+    //   }
+    //   p {
+    //     color: #000000;
+    //     margin-left: 12px;
+    //     padding-top: 40px;
+    //     text-align: left;
+    //     font-size: 21px;
+    //     width: 40%;
+    //     @media screen and (max-width: 767px) {
+    //       padding: 0px;
+    //       text-align: center;
+    //       margin-left: 0px;
+    //       width: 30%;
+    //     }
+    //   }
+    // }
+    // p {
+    //   padding: 0px;
+    //   font-weight: 500;
+    // }
+    // .p1 {
+    //   padding: 45px 20px 0px 20px;
+    //   @media screen and (max-width: 767px) {
+    //     padding-top: 15px;
+    //   }
+    // }
+    // .p2 {
+    //   padding-top: 55px;
+    // }
+    // .desc-big {
+    //   @media screen and (max-width: 600px) {
+    //     width: 65% !important;
+    //     p {
+    //       font-size: 12px;
+    //     }
+    //   }
+    //   .p2 {
+    //     padding-top:30px;
+    //   }
+    // }
+    // .col4 {
+    //   @media screen and (max-width: 767px) {
+    //     display:none;
+    //   }
+    // } // .cta-agenda {
     // background-color: #02771E
     // }
   }
