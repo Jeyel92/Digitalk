@@ -241,7 +241,7 @@ body {
       padding: 0px;
       max-width: 20%;
     }
-    .img-fluid{
+    .img-fluid {
       width: 100%;
     }
     .card-hover {
@@ -276,61 +276,48 @@ body {
   h4 {
     @extend %h4-em-breve;
   }
-
- 
-
   .programacao {
     @media screen and (min-width: 768px) {
       margin-left: 33.333333%;
     }
-    img
-    {
+    img {
       width: 50%;
-      margin-top:25px
+      margin-top: 25px
     }
-
-    .img55{
+    .img55 {
       width: 53%;
     }
-
-    .img60{
+    .img60 {
       width: 60%;
     }
-
-    .img70{
+    .img70 {
       width: 70%;
     }
-
-    .img85{
+    .img85 {
       width: 85%;
     }
-
-    .img90{
+    .img90 {
       width: 90%;
     }
-  
-    .imgConvidados{
-      margin-left:80px;
+    .imgConvidados {
+      margin-left: 80px;
       @media screen and (max-width: 768px) {
         margin-left:40px;
       }
-      p{
+      p {
         font-size: 18px;
         font-weight: 500;
         padding-right: 60px;
-
         @media screen and (max-width: 768px) {
           font-size: 12px;
           font-weight: 500;
         }
-
-        span{
+        span {
           font-weight: 300;
-          font-size:16px;
+          font-size: 16px;
         }
       }
-    }
-    // padding: 0px 15px;
+    } // padding: 0px 15px;
     // max-width: 94%;
     // margin: 0 auto;
     // overflow: hidden;
@@ -417,16 +404,23 @@ body {
   } // height: 200px;
 }
 
-.section-apoio {
-  padding: 50px;
+#localizacao {
+  padding:80px 0px 0px 0px;
   h3 {
     font-family: "NexaBold";
-    span {
-      color: #02771E;
-    }
+    text-align: center;
+    margin-bottom:50px;
   }
-  h4 {
-    @extend %h4-em-breve;
+  .mapouter {
+    text-align: right;
+    height: 500px;
+    width: 100%;
+  }
+  .gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 100%;
   }
 }
 
@@ -472,11 +466,4 @@ footer {
   h4 {
     @extend %h4-em-breve;
   }
-}
-
-#googleMap {
-  width: 100%; /* Span the entire width of the screen */
-  height: 400px; /* Set the height to 400 pixels */
-  //-webkit-filter: grayscale(100%);
- // filter: grayscale(100%); /* Change the color of the map to black and white */
 }
