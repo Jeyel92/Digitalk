@@ -277,8 +277,6 @@ body {
 }
 
 .section-agenda {
-  background-color: #514C4C;
-  color: #ffffff;
   padding-bottom: 50px;
 }
 
@@ -288,63 +286,70 @@ body {
   margin-bottom: 25px;
 }
 
+.section-agenda .agenda {
+  margin: 0 auto;
+}
+
+.section-agenda .agenda .programacao {
+  border-bottom: 1px dotted #cccccc;
+  padding-bottom: 15px;
+  margin-top: 15px;
+  min-height: 100px;
+}
+
+.section-agenda .agenda .programacao .horarios {
+  font-weight: bold;
+  font-size: 2.1em;
+  margin-top: 17px;
+  padding-left: 0px;
+}
+
+.section-agenda .agenda .programacao .seta-cinza, .section-agenda .agenda .programacao .seta-vermelha {
+  background-position: left center, center;
+  background-repeat: no-repeat, no-repeat;
+}
+
+@media screen and (max-width: 760px) {
+  .section-agenda .agenda .programacao .seta-cinza, .section-agenda .agenda .programacao .seta-vermelha {
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 50px;
+  }
+}
+
+.section-agenda .agenda .programacao .seta-cinza {
+  background-image: url(../images/gray_bol.png), url(../images/set_cinza.png);
+}
+
+@media screen and (max-width: 760px) {
+  .section-agenda .agenda .programacao .seta-cinza {
+    background-image: url(../images/gray_bol.png);
+  }
+}
+
+.section-agenda .agenda .programacao .seta-vermelha {
+  background-image: url(../images/red_bol.png), url(../images/seta_vermelha.png);
+}
+
+@media screen and (max-width: 760px) {
+  .section-agenda .agenda .programacao .seta-vermelha {
+    background-image: url(../images/red_bol.png);
+  }
+}
+
+.section-agenda .agenda .programacao .tema, .section-agenda .agenda .programacao .tema-curto {
+  font-weight: bold;
+  font-size: 1.7em;
+}
+
 @media screen and (min-width: 768px) {
-  .section-agenda .programacao {
-    margin-left: 33.333333%;
+  .section-agenda .agenda .programacao .tema, .section-agenda .agenda .programacao .tema-curto {
+    text-align: left;
   }
 }
 
-.section-agenda .programacao img {
-  width: 50%;
-  margin-top: 25px;
-}
-
-.section-agenda .programacao .img55 {
-  width: 53%;
-}
-
-.section-agenda .programacao .img60 {
-  width: 60%;
-}
-
-.section-agenda .programacao .img70 {
-  width: 70%;
-}
-
-.section-agenda .programacao .img85 {
-  width: 85%;
-}
-
-.section-agenda .programacao .img90 {
-  width: 90%;
-}
-
-.section-agenda .programacao .imgConvidados {
-  margin-left: 80px;
-}
-
-@media screen and (max-width: 768px) {
-  .section-agenda .programacao .imgConvidados {
-    margin-left: 40px;
-  }
-}
-
-.section-agenda .programacao .imgConvidados p {
-  font-size: 18px;
-  font-weight: 500;
-  padding-right: 60px;
-}
-
-@media screen and (max-width: 768px) {
-  .section-agenda .programacao .imgConvidados p {
-    font-size: 12px;
-    font-weight: 500;
-  }
-}
-
-.section-agenda .programacao .imgConvidados p span {
-  font-weight: 300;
-  font-size: 16px;
+.section-agenda .agenda .programacao .tema-curto {
+  line-height: 3;
 }
 
 .section-cta {

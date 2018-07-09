@@ -265,8 +265,6 @@ body {
 }
 
 .section-agenda {
-  background-color: #514C4C;
-  color: #ffffff;
   padding-bottom: 50px;
   h3 {
     font-family: "NexaBold";
@@ -276,121 +274,61 @@ body {
   h4 {
     @extend %h4-em-breve;
   }
-  .programacao {
-    @media screen and (min-width: 768px) {
-      margin-left: 33.333333%;
-    }
-    img {
-      width: 50%;
-      margin-top: 25px
-    }
-    .img55 {
-      width: 53%;
-    }
-    .img60 {
-      width: 60%;
-    }
-    .img70 {
-      width: 70%;
-    }
-    .img85 {
-      width: 85%;
-    }
-    .img90 {
-      width: 90%;
-    }
-    .imgConvidados {
-      margin-left: 80px;
-      @media screen and (max-width: 768px) {
-        margin-left:40px;
+  .agenda {
+    margin: 0 auto;
+    .programacao {
+      border-bottom: 1px dotted #cccccc;
+      padding-bottom: 15px;
+      margin-top:15px;
+      min-height: 100px;
+
+      .horarios {
+        font-weight: bold;
+        font-size: 2.1em;
+        margin-top: 17px;
+        padding-left: 0px;
       }
-      p {
-        font-size: 18px;
-        font-weight: 500;
-        padding-right: 60px;
-        @media screen and (max-width: 768px) {
-          font-size: 12px;
-          font-weight: 500;
+
+      .seta-cinza, .seta-vermelha{
+        @media screen and (max-width: 760px) {         
+          background-position: center;
+          background-repeat: no-repeat;
+          height: 50px;
         }
-        span {
-          font-weight: 300;
-          font-size: 16px;
-        }
+       
+        background-position: left center,
+        center;
+        background-repeat: no-repeat,
+        no-repeat;
       }
-    } // padding: 0px 15px;
-    // max-width: 94%;
-    // margin: 0 auto;
-    // overflow: hidden;
-    // margin-bottom: 14px;
-    // height: 145px;
-    // font-size: 1.2rem;
-    // @media screen and (min-width: 768px) {
-    //   margin-top: 30px;
-    // }
-    // @media screen and (max-width: 802px) {
-    //   .col-sm-3 {
-    //     width: 25%
-    //   }
-    // }
-    // .horarios {
-    //   @media screen and (min-width: 768px) {
-    //     background-image: url(../images/horarios.png);
-    //     background-repeat: no-repeat;
-    //     background-size: cover;
-    //     height: 145px;
-    //   }
-    //   @media screen and (max-width: 767px) {
-    //     background: #ffffff;
-    //     width: 35%;
-    //     height: 100%;
-    //     border-radius: 50px;
-    //   }
-    //   p {
-    //     color: #000000;
-    //     margin-left: 12px;
-    //     padding-top: 40px;
-    //     text-align: left;
-    //     font-size: 21px;
-    //     width: 40%;
-    //     @media screen and (max-width: 767px) {
-    //       padding: 0px;
-    //       text-align: center;
-    //       margin-left: 0px;
-    //       width: 30%;
-    //     }
-    //   }
-    // }
-    // p {
-    //   padding: 0px;
-    //   font-weight: 500;
-    // }
-    // .p1 {
-    //   padding: 45px 20px 0px 20px;
-    //   @media screen and (max-width: 767px) {
-    //     padding-top: 15px;
-    //   }
-    // }
-    // .p2 {
-    //   padding-top: 55px;
-    // }
-    // .desc-big {
-    //   @media screen and (max-width: 600px) {
-    //     width: 65% !important;
-    //     p {
-    //       font-size: 12px;
-    //     }
-    //   }
-    //   .p2 {
-    //     padding-top:30px;
-    //   }
-    // }
-    // .col4 {
-    //   @media screen and (max-width: 767px) {
-    //     display:none;
-    //   }
-    // } // .cta-agenda {
-    // background-color: #02771E
-    // }
+      .seta-cinza {
+        @media screen and (max-width: 760px) {
+          background-image: url(../images/gray_bol.png);        
+        }
+        background-image: url(../images/gray_bol.png),
+        url(../images/set_cinza.png);       
+      }
+
+      .seta-vermelha{
+        @media screen and (max-width: 760px) {
+          background-image: url(../images/red_bol.png);         
+        }
+
+        background-image: url(../images/red_bol.png),
+        url(../images/seta_vermelha.png);
+      }
+      .tema, .tema-curto {
+        @media screen and (min-width: 768px) {
+          text-align: left;
+        }
+        font-weight: bold;
+        font-size: 1.7em;
+      }
+
+      .tema-curto {
+        line-height: 3;
+      }
+    }
   }
 }
 
@@ -405,11 +343,11 @@ body {
 }
 
 #localizacao {
-  padding:80px 0px 0px 0px;
+  padding: 80px 0px 0px 0px;
   h3 {
     font-family: "NexaBold";
     text-align: center;
-    margin-bottom:50px;
+    margin-bottom: 50px;
   }
   .mapouter {
     text-align: right;
