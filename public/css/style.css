@@ -369,6 +369,10 @@ body {
   font-weight: 300;
 }
 
+.section-agenda .agenda div:last-child {
+  border-bottom: 0px;
+}
+
 .section-cta {
   padding: 60px;
 }
