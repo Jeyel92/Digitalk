@@ -285,17 +285,10 @@ body {
       .horarios {
         font-weight: bold;
         font-size: 2.1em;
-        margin-top: 17px;
         padding-left: 0px;
-      }
+      }    
 
       .seta-cinza, .seta-vermelha{
-        @media screen and (max-width: 760px) {         
-          background-position: center;
-          background-repeat: no-repeat;
-          height: 50px;
-        }
-       
         background-position: left center,
         center;
         background-repeat: no-repeat,
@@ -309,24 +302,57 @@ body {
         url(../images/set_cinza.png);       
       }
 
+    
       .seta-vermelha{
-        @media screen and (max-width: 760px) {
-          background-image: url(../images/red_bol.png);         
-        }
-
         background-image: url(../images/red_bol.png),
         url(../images/seta_vermelha.png);
       }
-      .tema, .tema-curto {
+
+
+      .seta-vermelha-grande{
+        background-image: url(../images/red_bol.png),
+        url(../images/seta_vermelha.png), url(../images/lacuna_vermelha.png);
+        background-position: left center,
+        center, 58%;
+        background-repeat: no-repeat,
+        no-repeat, repeat-y;
+      }
+
+      .seta-cinza, .seta-vermelha, .seta-vermelha-grande{
+        @media screen and (max-width: 760px) {         
+          background-position: center;
+          background-repeat: no-repeat;
+          height: 50px;
+        }
+      }
+
+      .seta-vermelha,.seta-vermelha-grande{
+        @media screen and (max-width: 760px) {
+          background-image: url(../images/red_bol.png);         
+        }
+      }
+      
+      .tema, .tema-curto,.tema-longo {
         @media screen and (min-width: 768px) {
           text-align: left;
         }
-        font-weight: bold;
-        font-size: 1.7em;
+        font-weight: bold;        
       }
 
+      .tema, .tema-curto{
+        font-size: 1.7em;
+      }
       .tema-curto {
         line-height: 3;
+      }
+
+      .tema-longo{
+        font-size: 1.4em;
+
+        .tema-convidados{
+          font-size: 0.9em;
+          font-weight: 300;    
+        }
       }
     }
   }
