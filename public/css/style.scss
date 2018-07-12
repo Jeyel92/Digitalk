@@ -297,7 +297,10 @@ body {
     .view {
       margin: 0px;
       padding: 0px;
-      max-width: 80%;
+      @media screen and (min-width: 1200px)   {
+        max-width: 80%;
+      }
+     
     }
     .img-fluid {
       width: 100%;
@@ -481,23 +484,56 @@ footer {
   h5 {
     color: #ffffff;
     margin-top: 1.5rem;
+
+    font-size: 1rem;
+    @media screen and (min-width: 768px) {
+      font-size: 1.25rem
+    }
   }
   .footer-left {
-    border-right: 1px #ffffff;
-    border-right-style: dashed; // img {
-    //   width: 70%;
-    // }
+    margin-bottom: 20px;
+
+    border-bottom: 1px #ffffff;
+    border-bottom-style: dashed; 
+
+    @media screen and (min-width: 768px) {
+      border-bottom:0px;
+      border-right: 1px #ffffff;
+      border-right-style: dashed; 
+    }
+    
+    img {
+      width: 100%;
+      @media screen and (min-width: 768px) {
+       width: initial;
+      }
+    }
     p {
-      line-height: 1em;
-      font-size: 18px
+      line-height: 1.5em;
+
+      font-size: 0.9rem;
+      @media screen and (min-width: 768px) {
+        line-height: 1em;
+        font-size: 18px
+      }
+     
     }
   }
   .footer-right {
     img {
-      width: 35%;
+      width: 65%;
+      @media screen and (min-width: 768px) {
+       width: 55%;
+      }
+      @media screen and (min-width: 992px) {
+        width: 35%;
+      }
     }
     p {
-      padding: 0px 40px;
+
+      @media screen and (min-width: 992px) {
+        padding: 0px 40px;
+      }
       a {
         text-decoration: none;
         color: #ffffff;
@@ -506,8 +542,12 @@ footer {
   }
   P {
     margin: 1em 0;
-    color: #ffffff; //font-size: 18px;
+    color: #ffffff; 
     font-size: 14px;
+
+    @media screen and (min-width: 768px) and (max-width: 992px) {
+      font-size:1.1rem;
+    }
   }
 }
 

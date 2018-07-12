@@ -307,7 +307,12 @@ body {
 .section-convidados .row .view {
   margin: 0px;
   padding: 0px;
-  max-width: 80%;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-convidados .row .view {
+    max-width: 80%;
+  }
 }
 
 .section-convidados .row .img-fluid {
@@ -504,24 +509,71 @@ footer {
 footer h5 {
   color: #ffffff;
   margin-top: 1.5rem;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  footer h5 {
+    font-size: 1.25rem;
+  }
 }
 
 footer .footer-left {
-  border-right: 1px #ffffff;
-  border-right-style: dashed;
+  margin-bottom: 20px;
+  border-bottom: 1px #ffffff;
+  border-bottom-style: dashed;
+}
+
+@media screen and (min-width: 768px) {
+  footer .footer-left {
+    border-bottom: 0px;
+    border-right: 1px #ffffff;
+    border-right-style: dashed;
+  }
+}
+
+footer .footer-left img {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  footer .footer-left img {
+    width: initial;
+  }
 }
 
 footer .footer-left p {
-  line-height: 1em;
-  font-size: 18px;
+  line-height: 1.5em;
+  font-size: 0.9rem;
+}
+
+@media screen and (min-width: 768px) {
+  footer .footer-left p {
+    line-height: 1em;
+    font-size: 18px;
+  }
 }
 
 footer .footer-right img {
-  width: 35%;
+  width: 65%;
 }
 
-footer .footer-right p {
-  padding: 0px 40px;
+@media screen and (min-width: 768px) {
+  footer .footer-right img {
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  footer .footer-right img {
+    width: 35%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  footer .footer-right p {
+    padding: 0px 40px;
+  }
 }
 
 footer .footer-right p a {
@@ -533,6 +585,12 @@ footer P {
   margin: 1em 0;
   color: #ffffff;
   font-size: 14px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  footer P {
+    font-size: 1.1rem;
+  }
 }
 
 .collapse {
