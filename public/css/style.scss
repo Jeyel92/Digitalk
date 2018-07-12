@@ -70,7 +70,10 @@ body {
     font-family: "NexaBold";
     @extend %shared-menu-color;
     line-height: 1.504;
-    margin-right: 15px;
+    @media screen and (min-width: 992px) {
+      margin-right: 15px;
+    }
+
   }
   .navbar-brand {
     width: 231px;
@@ -290,19 +293,36 @@ body {
     @extend %h4-em-breve;
   }
   .row {
-    .col-sm-3 {
+    
+    .view {
       margin: 0px;
       padding: 0px;
-      max-width: 20%;
+      max-width: 80%;
     }
     .img-fluid {
       width: 100%;
     }
     .card-hover {
+
+      h5{
+        font-size: 1.5rem;
+
+        @media screen and (min-width: 768px) and (max-width: 768px)  {
+          font-size: 1.25rem;
+        }
+        @media screen and (min-width: 1200px)   {
+          font-size: 1.25rem;
+        }
+      }
+
       padding: 50px;
+      @media screen and (min-width: 768px) and (max-width: 768px) {
+        padding: 35px;
+      }
+
       text-align: left;
       p {
-        font-size: 0.8rem;
+        font-size: 1rem;
         margin-bottom: 0px;
         &:nth-child(4n) {
           margin-top: 10px;

@@ -60,7 +60,12 @@ body {
   font-size: 20px;
   font-family: "NexaBold";
   line-height: 1.504;
-  margin-right: 15px;
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-red .nav-item {
+    margin-right: 15px;
+  }
 }
 
 .navbar-red .navbar-brand {
@@ -299,10 +304,10 @@ body {
   padding-bottom: 30px;
 }
 
-.section-convidados .row .col-sm-3 {
+.section-convidados .row .view {
   margin: 0px;
   padding: 0px;
-  max-width: 20%;
+  max-width: 80%;
 }
 
 .section-convidados .row .img-fluid {
@@ -314,8 +319,30 @@ body {
   text-align: left;
 }
 
+.section-convidados .row .card-hover h5 {
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) and (max-width: 768px) {
+  .section-convidados .row .card-hover h5 {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-convidados .row .card-hover h5 {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 768px) {
+  .section-convidados .row .card-hover {
+    padding: 35px;
+  }
+}
+
 .section-convidados .row .card-hover p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   margin-bottom: 0px;
 }
 
