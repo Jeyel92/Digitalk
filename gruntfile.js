@@ -20,8 +20,7 @@ module.exports = function(grunt) {
             my_target: {
               files: {
                 'public/js/requestAnimationFrame.min.js': ['public/js/requestAnimationFrame.js'],
-                'public/js/scripts.min.js': ['public/js/scripts.js'],
-                'public/js/maps.min.js': ['public/js/maps.js']
+                'public/js/scripts.min.js': ['public/js/scripts.js']
               }
             }
           }
