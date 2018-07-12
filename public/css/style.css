@@ -352,7 +352,7 @@ body {
   }
 }
 
-.section-agenda .agenda .programacao .tema, .section-agenda .agenda .programacao .tema-curto {
+.section-agenda .agenda .programacao .tema, .section-agenda .agenda .programacao .tema-curto, .section-agenda .agenda .programacao .tema-longo {
   font-size: 1.7em;
 }
 
@@ -360,8 +360,10 @@ body {
   line-height: 3;
 }
 
-.section-agenda .agenda .programacao .tema-longo {
-  font-size: 1.4em;
+@media screen and (min-width: 768px) {
+  .section-agenda .agenda .programacao .tema-longo {
+    font-size: 1.4em;
+  }
 }
 
 .section-agenda .agenda .programacao .tema-longo .tema-convidados {

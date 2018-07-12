@@ -340,7 +340,7 @@ body {
         font-weight: bold;        
       }
 
-      .tema, .tema-curto{
+      .tema, .tema-curto, .tema-longo{
         font-size: 1.7em;
       }
       .tema-curto {
@@ -348,7 +348,10 @@ body {
       }
 
       .tema-longo{
-        font-size: 1.4em;
+        @media screen and (min-width: 768px) {
+          font-size: 1.4em;
+        }
+        
 
         .tema-convidados{
           font-size: 0.9em;
