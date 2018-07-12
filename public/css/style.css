@@ -77,11 +77,16 @@ body {
   background-attachment: scroll;
   background-size: cover;
   background-color: #ffffff;
-  min-height: 600px;
   width: 100%;
   display: block;
   position: relative;
   overflow: hidden;
+}
+
+@media screen and (min-width: 768px) {
+  .home-section {
+    min-height: 600px;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -92,42 +97,62 @@ body {
 
 .home-section .home-destaque {
   margin: 0;
+  padding: 0;
   margin-top: 15%;
 }
 
 .home-section .home-destaque .destaque {
   background-image: url(../images/mote.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  height: 720px;
+  background-size: contain;
+  padding-bottom: 30px;
+  background-position: bottom;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 768px) {
+  .home-section .home-destaque .destaque {
+    background-size: cover;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
   .home-section .home-destaque .destaque {
     background-position: right;
   }
 }
 
-.home-section .home-cta {
-  padding-top: 45%;
-  padding-left: 10%;
-  text-align: left;
-}
-
-@media screen and (max-width: 1000px) {
-  .home-section .home-cta {
-    padding-top: 70%;
+@media screen and (min-width: 1200px) {
+  .home-section .home-destaque .destaque {
+    background-position: initial;
   }
 }
 
-@media screen and (max-width: 700px) {
+.home-section .home-cta {
+  text-align: left;
+  padding-top: 60%;
+}
+
+@media screen and (min-width: 768px) {
   .home-section .home-cta {
-    padding-top: 100%;
+    padding-left: 10%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .home-section .home-cta {
+    padding-top: 45%;
   }
 }
 
 .home-section .home-cta p {
-  font-size: 21px;
+  font-size: 1em;
+}
+
+@media screen and (min-width: 768px) {
+  .home-section .home-cta p {
+    font-size: 21px;
+  }
 }
 
 .home-section .home-cta .col-sm-6 {
@@ -160,9 +185,20 @@ body {
   line-height: 1.124;
 }
 
+.sobre-section img {
+  width: 100%;
+}
+
 .sobre-section p {
   font-family: "NexaLight";
   font-size: 18px;
+}
+
+@media screen and (max-width: 700px) {
+  .sobre-section h3 {
+    margin-top: 10%;
+    margin-bottom: 0;
+  }
 }
 
 .card {
@@ -231,9 +267,27 @@ body {
   line-height: 50px;
 }
 
+@media screen and (max-width: 768px) {
+  .section-evento h4 {
+    font-size: 1.3rem;
+  }
+}
+
 .section-evento p {
   text-align: left;
   font-size: 16px;
+}
+
+@media screen and (max-width: 760px) {
+  .section-evento p {
+    padding: 10px 25px 0px 25px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .section-evento p {
+    text-align: center;
+  }
 }
 
 .section-convidados {
@@ -381,8 +435,14 @@ body {
 
 .section-cta p {
   font-family: "NexaBold";
-  font-size: 35px;
+  font-size: 1.17em;
   font-weight: 600;
+}
+
+@media screen and (min-width: 992px) {
+  .section-cta p {
+    font-size: 35px;
+  }
 }
 
 #localizacao {
