@@ -149,7 +149,8 @@ body {
     
    
     p {
-      font-size: 1em;
+      font-size: 0.7em;
+
       @media screen and (min-width: 768px) {
         font-size: 21px
       }
@@ -318,14 +319,14 @@ body {
         }
       }
 
-      padding: 50px;
+      padding: 50px 30px;
       @media screen and (min-width: 768px) and (max-width: 768px) {
         padding: 35px;
       }
 
       text-align: left;
       p {
-        font-size: 1rem;
+        font-size: 0.9rem;
         margin-bottom: 0px;
         &:nth-child(4n) {
           margin-top: 10px;
