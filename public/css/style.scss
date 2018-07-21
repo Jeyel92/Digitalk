@@ -293,7 +293,9 @@ body {
     @extend %h4-em-breve;
   }
   .row {
-    
+    .col-xl-2{
+      max-width: 14.2% !important;
+    }
     .view {
       margin: 0px;
       padding: 0px;
@@ -314,19 +316,22 @@ body {
           font-size: 1.25rem;
         }
         @media screen and (min-width: 1200px)   {
-          font-size: 1.25rem;
+          font-size: 1.10rem;
         }
       }
 
-      padding: 50px;
+      padding: 40px 30px;
       @media screen and (min-width: 768px) and (max-width: 768px) {
         padding: 35px;
       }
 
       text-align: left;
       p {
-        font-size: 1rem;
+        font-size: 0.9rem;
         margin-bottom: 0px;
+        &:nth-child(3n) {
+        font-style:italic; 
+        }
         &:nth-child(4n) {
           margin-top: 10px;
           i {
