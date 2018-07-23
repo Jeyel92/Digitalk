@@ -299,9 +299,21 @@ body {
   text-align: center;
 }
 
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+  .section-convidados {
+    max-width: 960px;
+  }
+}
+
 .section-convidados h3 {
   font-family: "NexaBold";
   padding-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section-convidados .row .col-xl-2 {
+    max-width: 14.2% !important;
+  }
 }
 
 .section-convidados .row .view {
@@ -320,16 +332,13 @@ body {
 }
 
 .section-convidados .row .card-hover {
-<<<<<<< HEAD
-  padding: 50px 35px;
-=======
-  padding: 50px 30px;
->>>>>>> 8efbfa387fb12a39e0e4c3a15a1f6033a2dbf393
+  padding: 40px 40px;
   text-align: left;
 }
 
 .section-convidados .row .card-hover h5 {
   font-size: 1.5rem;
+  font-weight: 500;
 }
 
 @media screen and (min-width: 768px) and (max-width: 768px) {
@@ -338,9 +347,16 @@ body {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 992px) and (max-width: 1200px) {
   .section-convidados .row .card-hover h5 {
     font-size: 1.25rem;
+    font-weight: bold;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-convidados .row .card-hover h5 {
+    font-size: 1.10rem;
   }
 }
 
@@ -350,9 +366,31 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .section-convidados .row .card-hover {
+    padding: 30px;
+  }
+}
+
 .section-convidados .row .card-hover p {
-  font-size: 0.9rem;
+  font-size: 1.25rem;
   margin-bottom: 0px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 768px) {
+  .section-convidados .row .card-hover p {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-convidados .row .card-hover p {
+    font-size: 0.7rem;
+  }
+}
+
+.section-convidados .row .card-hover p:nth-child(3n) {
+  font-style: italic;
 }
 
 .section-convidados .row .card-hover p:nth-child(4n) {
@@ -394,8 +432,8 @@ body {
 }
 
 .section-agenda .agenda .programacao .seta-cinza, .section-agenda .agenda .programacao .seta-vermelha {
-  background-position: left center, center;
-  background-repeat: no-repeat, no-repeat;
+  background-position: left center, center;
+  background-repeat: no-repeat, no-repeat;
 }
 
 .section-agenda .agenda .programacao .seta-cinza {
@@ -414,8 +452,8 @@ body {
 
 .section-agenda .agenda .programacao .seta-vermelha-grande {
   background-image: url(../images/red_bol.png), url(../images/seta_vermelha.png), url(../images/lacuna_vermelha.png);
-  background-position: left center, center, 58%;
-  background-repeat: no-repeat, no-repeat, repeat-y;
+  background-position: left center, center, 58%;
+  background-repeat: no-repeat, no-repeat, repeat-y;
 }
 
 @media screen and (max-width: 760px) {
